@@ -87,7 +87,7 @@ export default function Register() {
           </select>
           <p className="small text-slate-600 ">*All accounts are defaulted to employee, contact HR for admin rights.</p>
           <button
-            className="rounded-md border text-white border-slate-300 py-2 px-4 text-center text-sm transition-all shadow-sm hover:shadow-lg text-slate-600 bg-slate-800 hover:border-slate-800 focus:text-white focus:bg-slate-800 focus:border-slate-800 active:border-slate-800 active:text-white active:bg-slate-800 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none w-full"
+            className="rounded-md border text-white border-slate-300 py-2 px-4 text-center text-sm transition-all shadow-sm hover:shadow-lg  bg-slate-800 hover:border-slate-800 focus:text-white focus:bg-slate-800 focus:border-slate-800 active:border-slate-800 active:text-white active:bg-slate-800 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none w-full"
             type="submit"
           >
             Register

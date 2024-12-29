@@ -77,7 +77,7 @@ export default function Home() {
           </button>
         </form>
 
-        <p className="small mt-6 text-center text-slate-500">*demo email: employee1@gmail.com password: 123456</p>
+        <p className="small mt-6 text-center text-slate-500">*demo email: employee1@gmail.com password: 12345</p>
 
         <Link className="mt-8 block text-center hover:underline" to="/register">
           Register an Employee

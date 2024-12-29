@@ -15,9 +15,9 @@ export default function Product({ product, onOrder, onReceive, onCancel }) {
         <p>Order from Supplier: {product.onlineOrder}</p>
         <p>On Order: {product.orderedQuantity}</p>
         <div className="flex gap-3 my-3">
-          <OrderButton productId={product.id} onlineOrder={product.onlineOrder} onOrder={onOrder} />
-          <ReceivedButton productId={product.id} orderedQuantity={product.orderedQuantity} onReceive={onReceive} />
-          <CancelButton productId={product.id} orderedQuantity={product.orderedQuantity} onCancel={onCancel} />
+          <OrderButton productId={product._id} onlineOrder={product.onlineOrder} onOrder={onOrder} />
+          <ReceivedButton productId={product._id} orderedQuantity={product.orderedQuantity} onReceive={onReceive} />
+          <CancelButton productId={product._id} orderedQuantity={product.orderedQuantity} onCancel={onCancel} />
         </div>
       </li>
     </>

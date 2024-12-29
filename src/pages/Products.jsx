@@ -30,6 +30,7 @@ export default function Products() {
         const data = await response.json();
 
         if (data.status === 'success') {
+          console.log(data.data[0]._id);
           setProducts(data.data);
         } else {
           setError(data.message);
@@ -46,15 +47,15 @@ export default function Products() {
   }, [navigate]);
 
   const handleOrder = (updatedProduct) => {
-    setProducts((prevProducts) => prevProducts.map((product) => (product.id === updatedProduct.id ? updatedProduct : product)));
+    setProducts((prevProducts) => prevProducts.map((product) => (product._id === updatedProduct._id ? updatedProduct : product)));
   };
 
   const handleReceive = (updatedProduct) => {
-    setProducts((prevProducts) => prevProducts.map((product) => (product.id === updatedProduct.id ? updatedProduct : product)));
+    setProducts((prevProducts) => prevProducts.map((product) => (product._id === updatedProduct._id ? updatedProduct : product)));
   };
 
   const handleCancel = (updatedProduct) => {
-    setProducts((prevProducts) => prevProducts.map((product) => (product.id === updatedProduct.id ? updatedProduct : product)));
+    setProducts((prevProducts) => prevProducts.map((product) => (product._id === updatedProduct._id ? updatedProduct : product)));
   };
 
   const handleSearchChange = (e) => {
@@ -96,7 +97,7 @@ export default function Products() {
       </div>
       <ul className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6">
         {filteredProducts.map((product) => (
-          <Product key={product.id} product={product} onOrder={handleOrder} onReceive={handleReceive} onCancel={handleCancel} />
+          <Product key={product._id} product={product} onOrder={handleOrder} onReceive={handleReceive} onCancel={handleCancel} />
         ))}
       </ul>
     </div>
