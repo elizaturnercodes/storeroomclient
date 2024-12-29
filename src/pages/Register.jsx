@@ -51,7 +51,7 @@ export default function Register() {
 
   return (
     <div className="flex h-screen">
-      <div className="m-auto max-w-xl">
+      <div className="m-auto max-w-xl px-6">
         <h1 className="text-center text-5xl mb-6">Stock Room Register</h1>
         <form onSubmit={handleSubmit} className="space-y-4">
           <input
