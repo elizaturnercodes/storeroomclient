@@ -2,7 +2,7 @@
 export default function CancelButton({ productId, orderedQuantity, onCancel }) {
   async function cancelItem() {
     try {
-      const response = await fetch(`http://localhost:3000/api/products/cancel/${productId}`, {
+      const response = await fetch(`https://storeroomserver.vercel.app/api/products/cancel/${productId}`, {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json',

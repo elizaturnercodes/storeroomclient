@@ -2,7 +2,7 @@
 export default function OrderButton({ productId, onlineOrder, onOrder }) {
   async function orderItem() {
     try {
-      const response = await fetch(`http://localhost:3000/api/products/order/${productId}`, {
+      const response = await fetch(`https://storeroomserver.vercel.app/api/products/order/${productId}`, {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json',

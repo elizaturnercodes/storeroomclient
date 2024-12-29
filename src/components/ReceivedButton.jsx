@@ -2,7 +2,7 @@
 export default function ReceivedButton({ productId, orderedQuantity, onReceive }) {
   async function receiveItem() {
     try {
-      const response = await fetch(`http://localhost:3000/api/products/receive/${productId}`, {
+      const response = await fetch(`https://storeroomserver.vercel.app/api/products/receive/${productId}`, {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json',
