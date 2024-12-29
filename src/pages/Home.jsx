@@ -50,7 +50,7 @@ export default function Home() {
 
   return (
     <div className="flex h-screen">
-      <div className="m-auto">
+      <div className="m-auto px-6">
         <h1 className="text-center text-5xl mb-6">Stock Room</h1>
         <form onSubmit={handleSubmit} className="space-y-4">
           <input
