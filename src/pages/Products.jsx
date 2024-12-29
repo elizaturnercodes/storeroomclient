@@ -76,7 +76,7 @@ export default function Products() {
     <div className="container mx-auto px-6 pt-6">
       <div className="flex justify-between items-center mb-6">
         <div>
-          <h1 className="text-3xl font-bold">Store Room Products</h1>
+          <h1 className="text-xl font-bold">Store Room Products</h1>
           {user && (
             <p className="small capitalize">
               Employee: {user.firstName} {user.lastName}
